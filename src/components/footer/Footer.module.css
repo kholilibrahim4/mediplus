@@ -1,0 +1,242 @@
+/*=========================
+	Start Footer CSS
+===========================*/
+.footer{
+	position:relative;
+}
+.footer .footerTop{
+	padding:100px 0px;
+	position:relative;
+	background:#1A76D1;
+    z-index: 1;
+}
+.footer .footerTop:before{
+	position:absolute;
+	content:"";
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background:#000;
+	opacity:0.1;
+    z-index: -1;
+}
+ .footer .singleFooter ul{
+	margin-bottom: 10px;
+} 
+.footer .singleFooter .social{
+	margin-top:25px;
+}
+.footer .singleFooter .social li{
+	display:inline-block;
+	margin-right:10px;
+}
+.footer .singleFooter .social li:last-child{
+	margin-right:0px;
+}
+.footer .singleFooter .social li a {
+	height: 34px;
+	width: 34px;
+	line-height: 34px;
+	text-align: center;
+	border: 1px solid #fff;
+	text-align: center;
+	padding: 0;
+	border-radius: 100%;
+	display: block;
+	color:#fff;
+	font-size: 16px;
+}
+.footer .singleFooter .social li a:hover{
+	color:#1A76D1;
+	background:#fff;
+	border-color:transparent;
+}
+/* .footer .singleFooter .social li a i{
+	
+} */
+.footer .singleFooter.fLink li a i{
+	margin-right:10px;
+}
+.footer .singleFooter.fLink li{
+	display:block;
+	margin-bottom:12px;
+}
+.footer .singleFooter.fLink li:last-child{
+	margin:0;
+}
+.footer .singleFooter.fLink li a {
+	display: block;
+	color: #fff;
+	text-transform: capitalize;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-weight: 400;
+}
+.footer .singleFooter.fLink li a:hover{
+	padding-left:8px;
+}
+.footer .singleFooter h2{
+	color:#fff;
+	font-size:20px;
+	font-weight:600;
+	text-transform:capitalize;
+	margin-bottom:40px;
+	padding-bottom:20px;
+	text-transform:capitalize;
+	position:relative;
+}
+.footer .singleFooter h2::before{
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0px;
+	height: 3px;
+	width: 50px;
+	background: #fff;
+}
+.footer .singleFooter .timeSidual{
+	margin-top:15px;
+}
+.footer .singleFooter .timeSidual{
+	overflow:hidden;
+}
+.footer .singleFooter .timeSidual li {
+	display: block;
+	color: #fff;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.footer .singleFooter .timeSidual li span{
+	/* display:inline-block; */
+	float:right;
+}
+.footer .singleFooter .day-head .time {
+	font-weight: 400;
+	float: right;
+}
+.footer .singleFooter p{
+	color:#fff;
+}
+ .newsletterInner{
+	margin-top:20px;
+	position:relative;
+}
+ .newsletterInner input {
+	background: transparent;
+	border: 1px solid #fff;
+	height: 50px;
+	line-height: 42px;
+	width: 100%;
+	margin-right: 15px;
+	color: #fff;
+	padding-left: 18px;
+	padding-right: 70px;
+	display: inline-block;
+	/* float: left; */
+	border-radius: 0px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-weight: 400;
+	border-radius: 5px;
+}
+.newsletterInner input:hover{
+	padding-left: 22px;
+}
+.footer input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+
+.footer input::-moz-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+
+.footer input::-ms-input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+.footer input::input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+ .newsletterInner .button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 50px;
+	line-height: 50px;
+	width: 50px;
+	background: #fff;
+	border-left: 1px solid #fff;
+	text-shadow: none;
+	box-shadow: none;
+	display: inline-block;
+	border-radius: 0px;
+	border: none;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border-radius: 0 5px 5px 0;
+	color: #1A76D1;
+	
+}
+.button i{
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+	font-size: 25px;
+}
+.footer .copyright{
+	background:#1A76D1;
+	padding:25px 0px 25px 0px;
+	text-align:center;
+}
+.footer .copyright .copyrightContent p{
+	color:#fff;
+}
+.footer .copyright .copyrightContent p a{
+	color:#fff;
+	font-weight:400;
+	text-decoration:underline;
+	display:inline-block;
+	margin-left:4px;
+}
+ .commonInput {
+	height: 60px;
+	width: 300px;
+	border: none;
+	color: #333;
+	box-shadow: none;
+	text-shadow: none;
+	border-radius: 5px;
+	padding: 0px 25px;
+	font-weight: 500;
+	font-size: 14px;
+	background: #fff;
+	font-weight:400;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+	.footer .footerTop{
+		padding:30px 0px;
+	}
+	.footer .singleFooter h2{
+		margin: 34px 0px 15px;
+        padding-bottom: 15px;
+    }
+}
+/*=========================
+	End Footer CSS
+===========================*/

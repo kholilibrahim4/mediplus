@@ -1,0 +1,24 @@
+ .date{
+	background: #1a76d1;
+	display: block;
+	padding: 20px;
+	text-align: center;
+	border-radius: 0;
+	border: none;
+	margin: 0;
+	margin-top: -1px;
+}
+ .date ul li{
+	font-size:16px;
+	color:#fff;
+	display:inline-block;
+	margin-right:60px;
+}
+ .date ul li:last-child{
+	margin:0;
+}
+ .date ul li span{
+	font-weight:500;
+	display:inline-block;
+	margin-right:5px;
+}

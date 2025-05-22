@@ -1,0 +1,11 @@
+ .newsTitle {
+	font-size: 25px;
+	margin: 20px 0;
+}
+.newsTitle a {
+	color: #252525;
+	font-weight: 600;
+}
+.newsTitle a:hover {
+	color: #1A76D1;
+}

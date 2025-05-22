@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'poppinsextralight';
+    src: url('../../assets/fonts/poppins-extralight-webfont.woff2') format('woff2'),
+    url('../../assets/fonts/poppins-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../../assets/fonts/poppins-regular-webfont.woff2') format('woff2'),
+    url('../../assets/fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('../../assets/fonts/poppins-semibold-webfont.woff2') format('woff2'),
+    url('../../assets/fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+    font-family: 'poppinsregular';
+    font-size: 12.5px;
+    letter-spacing: -0.3px;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #2C2D3F;
+    font-family: 'poppinssemibold';
+}
+
+p {
+    color: #757575;
+    margin: 0;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+
+.btn {
+    color: #fff;
+    padding: 13px;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+    background: #1A76D1;
+    position: relative;
+    box-shadow: none;
+    display: inline-block;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    border: none;
+    border-radius: 0;
+    border-radius: 4px;
+}
+.btn:hover {
+    color: #fff;
+}
+.btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2C2D3F;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+}
+.btn:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* this for single feature start*/
+.last::before {
+    display: none;
+}
+/* this for single feature end */
+
+
+/* Overlay */
+.overlay {
+    position: relative;
+    z-index: 1;
+}
+.overlay:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #1a76d1;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+/* section */
+section {
+    padding: 100px 0;
+}
+
+
+.container-fluid {
+    padding: 0 15px;
+}
+
+/* blog page comments replay css start========= */
+.replay {
+	padding-left: 100px;
+	position: relative;
+	margin-left: 100px;
+}
+.replay img{
+	position:absolute;
+	left:0;
+	top:0;
+} 
+.replay .body{
+	float: none;
+	width:100%;
+}
+
+/* hero slider css ================= */
+
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.owl-nav button.owl-prev{
+    left: 20px;
+}
+.owl-nav button.owl-next{
+    right: 20px;
+}
+.owl-nav button span {
+    font-size: 45px;
+        line-height: 49px;
+    background: #1A76D1;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 100%;
+    color:#fff
+
+}
+.owl-nav button:hover span {
+    background: #333;
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: none;
+}
+/* blog page comments replay css end ========= */
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    section {
+        padding: 50px 0;
+    }
+}

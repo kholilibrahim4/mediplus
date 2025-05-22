@@ -1,0 +1,83 @@
+.singleWidget {
+	margin-bottom: 30px;
+	padding: 40px;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
+	border-radius: 8px;
+}
+ .singleWidget .title {
+	position: relative;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	display: block;
+	background: #fff;
+	padding-left: 12px;
+}
+.singleWidget .title::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: -1px;
+	height: 100%;
+	width: 3px;
+	background: #1A76D1;
+}
+
+
+/* Recent Posts */
+ .singlePost {
+	position: relative;
+	border-bottom: 1px solid #ddd;
+	display: inline-block;
+	padding: 17px 0;
+}
+ .singlePost:last-child{
+	padding-bottom:0px;
+	border:none;
+}
+ .singlePost .image img{
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+}
+ .singlePost .content{
+	padding-left:100px;
+}
+ .singlePost .content h5 {
+	line-height: 18px;
+}
+ .singlePost .content h5 a {
+	color: #2C2D3F;
+	font-weight: 500;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 10px;
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+ .singlePost .content h5 a:hover{
+	color:#1A76D1;
+}
+ .singlePost .content .comment li{
+	color:#888;
+	display:inline-block;
+	margin-right:15px;
+	font-weight:400;
+	font-size:14px;
+}
+ .singlePost .content .comment li:last-child{
+	margin-right:0;
+}
+ .singlePost .content .comment li i{
+	display:inline-block;
+	margin-right:5px;
+}
+@media screen and (max-width: 768px) {
+	.singleWidget {padding: 20px;}
+}

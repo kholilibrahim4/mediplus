@@ -1,0 +1,19 @@
+/* Blockqoute */
+ blockquote {
+	background-image: url('/blockqoute-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 30px;
+	overflow: hidden;
+}
+ blockquote::before {
+	opacity: 0.9;
+}
+blockquote p {
+	color: #fff;
+	margin: 0;
+	line-height: 26px;
+	font-size: 15px;
+	position: relative;
+}

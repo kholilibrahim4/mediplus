@@ -1,0 +1,136 @@
+/*===========================
+	Start Hero Area CSS
+=============================*/
+.slider {
+	padding: 0;
+}
+.slider .singleSlider {
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+	background-repeat:no-repeat;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+/* .slider .singleSlider::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    background: rgba(255,255,255,.5);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} */
+
+.slider .singleSlider .text{
+	margin-top:120px;
+}
+.slider.index2 .singleSlider .text{
+	margin-top:150px;
+}
+.slider .singleSlider h1 {
+	color: #2C2D3F;
+	font-size: 38px;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	line-height: 42px;
+}
+.slider .singleSlider h1 span{
+	color:#1a76d1;
+}
+.slider .singleSlider p {
+	color: #2C2D3F;
+	margin-top: 27px;
+	font-weight: 400;
+}
+.slider .singleSlider .button{
+	margin-top:30px;
+}
+.slider .singleSlider .btn{
+	color:#fff;
+	background:#1a76d1;
+	font-weight:500;
+	display:inline-block;
+	margin:0;
+	margin-right:10px;
+}
+.slider .singleSlider .btn:last-child{
+	margin:0;
+}
+.slider .singleSlider .primary{
+	background:#2C2D3F;
+	color:#fff;
+}
+.slider .singleSlider .primary:before{
+	background:#1A76D1;
+}
+.slider .owl-carousel .owl-nav {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+	margin-top:-25px;
+}
+.slider .owl-carousel .owl-nav div {
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #1A76D1;
+	color: #fff;
+	font-size: 26px;
+	position: absolute;
+	margin: 0;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	padding: 0;
+	border-radius: 50%;
+}
+.slider .owl-carousel .owl-nav div:hover{
+	background:#2C2D3F;
+	color:#fff;
+}
+.slider .owl-carousel .owl-controls .owl-nav .owl-prev{
+	left:20px;
+}
+.slider .owl-carousel .owl-controls .owl-nav .owl-next{
+	right:20px;
+}
+
+
+
+
+/* Slider Animation */
+.owl-item.active .singleSlider h1{
+    animation: fadeInUp 1s both 0.6s;
+}
+.owl-item.active .singleSlider p{
+    animation: fadeInUp 1s both 1s;
+}
+.owl-item.active .singleSlider .button{
+    animation: fadeInDown 1s both 1.5s;
+}
+
+
+@media screen and (max-width: 768px) {
+    .slider {
+        padding-top: 0;
+    }
+    .slider .singleSlider {
+        height: 380px;
+    }
+    .slider .singleSlider h1 {
+        font-size: 28px;
+    }
+    .slider .singleSlider .text{
+        margin-top:80px;
+    }
+}
+
+/*===========================
+	End Hero Area CSS
+=============================*/

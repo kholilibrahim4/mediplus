@@ -1,0 +1,40 @@
+/* Social Share */
+ .socialShare {
+	float: left;
+}
+ .socialShare li {
+	float: left;
+}
+ .socialShare li span{
+	padding-left:5px;
+}
+ .socialShare li.facebook a{
+	background:#5d82d1;
+}
+ .socialShare li.twitter a{
+	background:#40bff5;
+}
+ .socialShare li.googlePlus a{
+	background:#eb5e4c;
+}
+ .socialShare li.linkedin a{
+	background:#238cc8;
+}
+ .socialShare li.pinterest a{
+	background:#e13138;
+}
+ .socialShare li a {
+	padding: 10px 20px;
+	display: block;
+	color: #fff;
+}
+ .socialShare li a:hover{
+	background:#2B343E;
+}
+@media only screen and (max-width: 768px) {
+	.socialShare li {
+		float: none;
+		display: inline-block;
+		margin: 5px;
+	}
+}

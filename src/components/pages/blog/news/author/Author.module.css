@@ -1,0 +1,51 @@
+/* Blog Meta */
+ .meta {
+	overflow: hidden;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 15px;
+}
+ .meta span {
+	margin-right: 10px;
+	display: inline-block;
+}
+ .meta span:last-child{
+	margin:0;
+}
+ .meta span,  .meta span a {
+	color: #2C2D3F;
+	font-weight: 400;
+}
+ .meta span i {
+	margin-right: 5px;
+	color:#1A76D1;
+}
+ .metaLeft{
+	float:left;
+}
+ .metaLeft .author img {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	margin-right: 12px;
+}
+ .metaLeft .author {
+	float: left;
+}
+ .metaLeft span.date {
+	margin-top: 10px;
+}
+ .metaRight {
+	float: right;
+	margin-top: 10px;
+}
+@media only screen and (max-width: 767px) {
+	.metaRight {
+		/* display: inline-block; */
+		margin-top: -6px;
+		margin-left: 56px;
+		float: left;
+	}
+}

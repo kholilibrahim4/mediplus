@@ -1,0 +1,131 @@
+/*===================
+	Why choose CSS
+=====================*/
+.chooseLeft h3{
+	font-size:24px;
+	font-weight:600;
+	color:#2C2D3F;
+	position:relative;
+	padding-bottom:20px;
+	margin-bottom:24px;
+}
+.chooseLeft h3:before{
+	position:absolute;
+	content:"";
+	left:0;
+	bottom:0;
+	height:2px;
+	width:50px;
+	background:#1a76d1;
+}
+.chooseLeft p{
+	margin-bottom:35px;
+}
+/* .chooseLeft .list{} */
+.chooseLeft .list li {
+	color: #868686;
+	margin-bottom: 12px;
+    display: block;
+}
+.chooseLeft .list li:last-child{
+	margin-bottom:0px;
+}
+.chooseLeft .list li i{
+	height:15px;
+	width:15px;
+	line-height:15px;
+	text-align:center;
+	background:#1a76d1;
+	color:#fff;
+	font-size:14px;
+	border-radius:100%;
+	margin-right:16px;
+}
+/* Start Faq CSS */
+.whyChoose{
+	background:#fff;
+}
+ .chooseRight{
+	height:100%;
+	width:100%;
+	background-image:url('/video-bg.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	position:relative;
+}
+  .video {
+	color: #fff;
+	height: 70px;
+	width: 70px;
+	line-height: 70px;
+	text-align: center;
+	border-radius: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -35px;
+	margin-top: -35px;
+	font-size: 21px;
+	background: #1a76d1;
+	padding-left: 4px;
+    transition: .3s;
+    -webkit-transition: .3s;
+}
+  .video:hover{
+	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+}
+  .waves {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	background: #fff;
+	opacity: 0;
+	/* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; */
+	border-radius: 100%;
+	-webkit-animation: waves 2.5s ease-in-out infinite;
+	animation: waves 2.5s ease-in-out infinite;
+	left: 50%;
+	margin-left: -35px;
+	top: 50%;
+	margin-top: -35px;
+}
+@keyframes waves{
+    0%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        opacity: .8;
+    }
+    100%{
+        transform: scale(2.5);
+        -webkit-transform: scale(2.5);
+        opacity: 0;
+    }
+}
+  .wave1 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+  .wave2 {
+    -webkit-animation-delay: .75s;
+    animation-delay: .75s;
+}
+ .wave3 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+@media screen and (max-width: 768px) {
+	.chooseRight{
+		height: 300px;
+		margin-top: 20px;
+	}
+}
+
+/*=======================
+	End Why choose CSS
+=========================*/

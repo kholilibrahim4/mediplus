@@ -1,0 +1,9 @@
+.newsHead{
+	position:relative;
+	overflow:hidden;
+}
+/* .news-single .news-head{} */
+ .newsHead img{
+	width:100%;
+	height:100%;
+}

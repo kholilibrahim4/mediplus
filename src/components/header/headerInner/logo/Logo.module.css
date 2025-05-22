@@ -1,0 +1,50 @@
+.logo {
+	float: left;
+	margin-top: 18px;
+}
+.logo img {
+    height: auto;
+    max-width: 100%;
+}
+
+.style2 .logo {
+	margin-top:6px;
+}
+ .single-widget .logo{
+	margin:0;
+	padding:0;
+	margin-top: 7px;
+}
+
+/* mobile nave tigger */
+.mobileNavBtn{
+position: relative;
+height: 100%;
+}
+.mobileNavTigger{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	cursor: pointer;
+}
+.mobileNavTigger span{
+	width: 26px;
+    height: 3px;
+    background: #1A76D1;
+    display: block;
+    margin-bottom: 3px;
+	transition: .3s;
+	-webkit-transition: .3s;
+}
+
+.tigger span:nth-child(2){
+	display: none;
+}
+.tigger span:nth-child(1){
+	-webkit-transform:rotate(45deg) translate(5px, 0px);
+	transform:rotate(45deg) translate(5px, 0px)
+}
+.tigger span:nth-child(3){
+	-webkit-transform:rotate(-45deg) translate(3px, 1px);
+	transform:rotate(-45deg) translate(3px, 1px);
+}

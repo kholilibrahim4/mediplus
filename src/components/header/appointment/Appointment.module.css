@@ -1,0 +1,15 @@
+.getQuote{
+	margin-top:12px;
+}
+.getQuote .btn{
+	color:#fff;
+}
+.style2 .getQuote {
+	margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.getQuote{
+		display: none;
+	}
+}

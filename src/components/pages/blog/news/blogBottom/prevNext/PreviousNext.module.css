@@ -1,0 +1,39 @@
+/* Prev Next Button */
+ .prevNext {
+	float: right;
+}
+ .prevNext li {
+	display: inline-block;
+	padding: 0;
+	margin-right: 10px;
+}
+ .prevNext li:last-child{
+	border:none;
+}
+ .prevNext li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 16px;
+	border: 1px solid #c4c4c4;
+	color: #555;
+	border-radius: 4px;
+}
+ .prevNext li a:hover{
+	color:#fff;
+	background:#1A76D1;
+	border-color:transparent;
+}
+
+@media only screen and (max-width: 767px) {
+    .prevNext {
+        float: none;
+        text-align: center;
+        display: inline-block;
+    }
+    .prevNext li {
+        margin-top: 10px;
+    }
+}

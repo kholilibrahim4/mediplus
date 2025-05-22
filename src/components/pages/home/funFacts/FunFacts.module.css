@@ -1,0 +1,94 @@
+/*=======================
+	Start Fun Facts CSS
+=========================*/
+.funFacts{
+	position:relative;
+}
+.section{
+	padding:120px 0;
+}
+.funFacts{
+	background:url('/fun-bg.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	z-index: 1;
+}
+ .singleFun {
+	position: relative;
+}
+ .singleFun i {
+	position: absolute;
+	left: 0;
+	font-size: 62px;
+	color: #fff;
+	height: 66px;
+    width: 66px;
+    line-height: 60px;
+    font-size: 27px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	border: 2px solid #fff;
+	border-radius: 0px;
+	top: 50%;
+	margin-top: -35px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border-radius: 50%;
+}
+ .singleFun:hover i{
+	color:#1A76D1;
+	background:#fff;
+	border-color:transparent;
+}
+
+
+
+
+  .content {
+	padding-left: 80px;
+}
+ .singleFun span {
+	color: #fff;
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 26px;
+	position: relative;
+	display: block;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s eas;
+	display: block;
+	font-family: 'poppinssemibold';
+}
+ .singleFun p{
+	color:#fff;
+}
+@media screen and (max-width: 768px) {
+	.section{
+		padding:30px 0;
+	}
+	.singleFun {
+		margin: 35px 0;
+		padding-top: 60px;
+		text-align: center;
+		
+	}
+	.singleFun i {
+		left: 50%;
+		top: 7%;
+		transform: translateX(-33px);
+		-webkit-transform: translateX(-33px);
+	}
+
+ .content {
+        padding: 0;
+    }
+
+}
+
+
+/*===================
+	End Fun Facts
+=====================*/
