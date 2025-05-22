@@ -10,7 +10,7 @@ export default function DataContextProvider({ children }) {
             {
                 title: `We Provide Medical Services That You Can Trust!`,
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam.',
-                bgImg: '/slider.jpg',
+                bgImg: 'slider/slider.jpg',
                 btn: [
                     { text: 'Get Appointment', link: '/' },
                     { text: 'Learn More', link: '/' }
@@ -19,7 +19,7 @@ export default function DataContextProvider({ children }) {
             {
                 title: `We Provide Medical Services That You Can Trust!`,
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam.',
-                bgImg: '/slider2.jpg',
+                bgImg: 'slider/slider2.jpg',
                 btn: [
                     { text: 'Get Appointment', link: '/' },
                     { text: 'About Us', link: '/' }
@@ -28,7 +28,7 @@ export default function DataContextProvider({ children }) {
             {
                 title: `We Provide Medical Services That You Can Trust!`,
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam.',
-                bgImg: '/slider3.jpg',
+                bgImg: 'slider/slider3.jpg',
                 btn: [
                     { text: 'Get Appointment', link: '/' },
                     { text: 'Conatct Now', link: '/' }
