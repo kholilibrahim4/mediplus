@@ -19,9 +19,9 @@ export default function PricingItem({icon,title,amount,visit,btnText,priceList})
                 </div>
                 {/* <!-- Table List --> */}
                 <ul className={`${styles.tableList}`}>
-                    {priceList.map((item)=>{
+                    {priceList.map((item,ind)=>{
                         return (
-                            <li className={item.check ? '' : `${styles.cross}`}>
+                            <li key={ind} className={item.check ? '' : `${styles.cross}`}>
                                 <i className={`icofont ${item.check ? 'icofont-ui-check' : 'icofont-ui-close'}`}></i>
                                 {item.list}
                             </li>

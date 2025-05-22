@@ -16,7 +16,7 @@ export default function HeroItem({title,desc,btn,bgImg,owlClass}) {
                             <p>{desc}</p>
                             <div className={`${styles.button}`}>
                                 {btn.map((item,ind)=>{
-                                    return <a href={item.link} className={ind==1?`${styles.primary} btn`:`${styles.btn} btn`}>{item.text}</a>
+                                    return <a href={item.link} key={ind} className={ind==1?`${styles.primary} btn`:`${styles.btn} btn`}>{item.text}</a>
                                 })}
                                 
                             </div>

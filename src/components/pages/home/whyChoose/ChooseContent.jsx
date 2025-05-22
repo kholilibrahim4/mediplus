@@ -17,8 +17,8 @@ export default function ChooseContent() {
                     <p>{des1}</p>
                     <p>{des2}</p>
                     <Row>
-                        {list.map((item) => {
-                            return <ChooseList list={item} />
+                        {list.map((item, ind) => {
+                            return <ChooseList key={ind} list={item} />
                         })}
                     </Row>
                 </div>

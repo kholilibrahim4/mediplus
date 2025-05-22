@@ -7,9 +7,9 @@ import Portfolio from './pages/portfolio/Portfolio'
 export default function Layout() {
   return (
     <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/portfolio' element={<Portfolio />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/portfolio" element={<Portfolio />} />
     </Routes>
   )
 }

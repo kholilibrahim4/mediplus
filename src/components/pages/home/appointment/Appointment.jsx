@@ -23,9 +23,9 @@ export default function Appointment() {
                     <Col lg={6} md={12} >
                         <Form  className={`${styles.form}`} action="#">
                             <Row>
-                                {input.map((item) => {
+                                {input.map((item, ind) => {
                                     return (
-                                        <Col lg={6} md={12} sm={12} className='mb-4'>
+                                        <Col key={ind} lg={6} md={12} sm={12} className='mb-4'>
                                             <div className="form-group">
                                                 <InputField name={item.name} type={item.type} placeholder={item.placeholder} />
                                             </div>
@@ -36,9 +36,9 @@ export default function Appointment() {
                                 <Col lg={6} md={12} sm={12}>
                                     <div className="form-group">
                                         <select className={`form-select form-select-lg mb-4 ${styles.selectBorder}`}>
-                                            {department.map((item) => {
+                                            {department.map((item, ind) => {
                                                 return (
-                                                    <option value={item}>{item}</option>
+                                                    <option key={ind} value={item}>{item}</option>
                                                 )
                                             })}
                                         </select>
@@ -48,17 +48,17 @@ export default function Appointment() {
                                 <Col lg={6} md={12} sm={12}>
                                     <div className="form-group">
                                         <select className={`form-select form-select-lg mb-4 ${styles.selectBorder}`}>
-                                            {doctor.map((item) => {
+                                            {doctor.map((item, ind) => {
                                                 return (
-                                                    <option value={item}>{item}</option>
+                                                    <option key={ind} value={item}>{item}</option>
                                                 )
                                             })}
                                         </select>
                                     </div>
                                 </Col>
-                                {date.map((item) => {
+                                {date.map((item, ind) => {
                                     return (
-                                        <Col lg={6} md={12} sm={12} className='mb-4'>
+                                        <Col key={ind} lg={6} md={12} sm={12} className='mb-4'>
                                             <div className="form-group">
                                                 <InputField name={item.name} type={item.type} placeholder={item.placeholder} />
                                             </div>
@@ -66,9 +66,9 @@ export default function Appointment() {
                                     )
                                 })}
 
-                                {msg.map((item) => {
+                                {msg.map((item, ind) => {
                                     return (
-                                        <Col lg={12} className='mb-4'>
+                                        <Col key={ind} lg={12} className='mb-4'>
                                             <div className="form-group">
                                                 <TextareaField name={item.name} placeholder={item.placeholder} />
                                             </div>

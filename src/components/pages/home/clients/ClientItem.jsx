@@ -4,7 +4,7 @@ import styles from './Client.module.css'
 
 export default function ClientItem({img}) {
     return (
-        <div class={`${styles.singleClients}`}>
+        <div className={`${styles.singleClients}`}>
             <img src={img} alt="#" />
         </div>
     )

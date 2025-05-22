@@ -34,9 +34,9 @@ export default function Newsletter() {
                     <Col lg={6} sm={12}>
                         <div className="subscribe-form ">
                             <Form action="" method="get" target="_blank" className="newsletter-inner">
-                                {input.map((item) => {
+                                {input.map((item,ind) => {
                                     return (
-                                        <InputField name={item.name} type={item.type} placeholder={place} className={`${styles.commonInput}`} onFocus={handleFocus} />
+                                        <InputField key={ind} name={item.name} type={item.type} placeholder={place} className={`${styles.commonInput}`} onFocus={handleFocus} />
                                     )
                                 })}
                                 <Button

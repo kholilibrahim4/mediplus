@@ -7,9 +7,9 @@ export default function ChooseList({list}) {
     return (
         <Col lg={6}>
             <ul className={`${styles.list}`}>
-                {list.map((item)=>{
+                {list.map((item,ind)=>{
                     return(
-                        <li><i className="fa fa-caret-right"></i>{item} </li>
+                        <li key={ind}><i className="fa fa-caret-right"></i>{item} </li>
                     )
                 })}
             </ul>

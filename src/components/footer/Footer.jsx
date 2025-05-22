@@ -25,8 +25,8 @@ export default function Footer() {
                                     desc={aboutTitle.secDesc}
                                 />
                                 <ul className={styles.social}>
-                                    {footerSocial.map((item) => {
-                                        return <li><a href={item.link}><i className={item.icon}></i></a></li>
+                                    {footerSocial.map((item, ind) => {
+                                        return <li key={ind}><a href={item.link}><i className={item.icon}></i></a></li>
                                     })}
                                 </ul>
                             </FooterSingle>
@@ -43,15 +43,15 @@ export default function Footer() {
                                 <Row>
                                     <Col lg={6} md={6} sm={12}>
                                         <ul>
-                                            {link1.map((item) => {
-                                                return <li><a href={item.link}><i className="fa fa-caret-right" aria-hidden="true"></i>{item.text}</a></li>
+                                            {link1.map((item,ind) => {
+                                                return <li key={ind}><a href={item.link}><i className="fa fa-caret-right" aria-hidden="true"></i>{item.text}</a></li>
                                             })}
                                         </ul>
                                     </Col>
                                     <Col lg={6} md={6} sm={12}>
                                         <ul>
-                                            {link2.map((item) => {
-                                                return <li><a href={item.link}><i className="fa fa-caret-right" aria-hidden="true"></i>{item.text}</a></li>
+                                            {link2.map((item,ind) => {
+                                                return <li key={ind}><a href={item.link}><i className="fa fa-caret-right" aria-hidden="true"></i>{item.text}</a></li>
                                             })}
                                         </ul>
                                     </Col>
@@ -67,8 +67,8 @@ export default function Footer() {
                                     desc={openHourTitle.secDesc}
                                 />
                                 <ul className={styles.timeSidual}>
-                                    {schedule.map((item) => {
-                                        return (<li className="day">{item.days} <span>{item.time}</span></li>)
+                                    {schedule.map((item, ind) => {
+                                        return (<li key={ind} className="day">{item.days} <span>{item.time}</span></li>)
                                     })}
                                 </ul>
                             </FooterSingle>
@@ -80,8 +80,9 @@ export default function Footer() {
                                     desc={newsletterTitle.secDesc}
                                 />
                                 <Form action="" method="get" target="_blank" className={`${styles.newsletterInner}`}>
-                                    {input.map((item) => {
+                                    {input.map((item, ind) => {
                                         return <InputField
+                                            key={ind}
                                             name={item.name}
                                             type={item.type}
                                             placeholder={item.placeholder}

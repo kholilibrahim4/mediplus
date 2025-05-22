@@ -42,7 +42,7 @@ export default function Portfolio() {
                 </Row>
             </Container>
             <Container fluid>
-                <Row class="row">
+                <Row>
                     <Col lg={12} md={12} >
                         <OwlCarousel className="" loop margin={15} smartSpeed={500} nav={false} items={owlItems} autoplay dots={false}>
                             {portfolioItem.map((item) => {

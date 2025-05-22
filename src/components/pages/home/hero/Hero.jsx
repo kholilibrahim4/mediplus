@@ -16,8 +16,9 @@ export default function Hero() {
     return (
         <section className={`${styles.slider}`}>
             <OwlCarousel className={`${styles.heroSlider} owl-theme`} loop margin={10} smartSpeed={500} nav items={1} autoplay dots={false}>
-                {hero.map((item) => {
+                {hero.map((item, id) => {
                     return <HeroItem
+                        key={id}
                         title={item.title}
                         desc={item.desc}
                         btn={item.btn}

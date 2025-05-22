@@ -16,8 +16,8 @@ export default function ScheduleItem({ icon, title, tagline, desc, btnTxt, btnIc
                         <span>{tagline}</span>
                         <h4>{title}</h4>
                         <ul className={styles.timeSidual}>
-                            {desc instanceof Array ? desc.map((item) => {
-                                return (<li className="day">{item.days} <span>{item.time}</span></li>)
+                            {desc instanceof Array ? desc.map((item,ind) => {
+                                return (<li key={ind} className="day">{item.days} <span>{item.time}</span></li>)
                             })
                                 : <p>{desc}</p>}
                         </ul>
