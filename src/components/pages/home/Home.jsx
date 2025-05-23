@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import GetPro from '../../getPro/GetPro'
 import Header from '../../header/Header'
 import Features from './features/Features'
@@ -17,6 +17,10 @@ import Footer from '../../footer/Footer'
 import Hero from './hero/Hero'
 
 export default function Home() {
+  useEffect(()=>{
+    window.scroll(0,0)
+  },[])
+
   return (
     <>
         <GetPro /> 

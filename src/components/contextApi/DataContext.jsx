@@ -323,21 +323,21 @@ export default function DataContextProvider({ children }) {
             secDesc: 'Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts',
             blogItems: [
                 {
-                    img: '/blog1.jpg',
+                    img: 'blog/blog1.jpg',
                     date: '22 Aug, 2020',
                     title: 'We have annnocuced our new product.',
                     desc: 'Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.',
                     link: ''
                 },
                 {
-                    img: '/blog2.jpg',
+                    img: 'blog/blog2.jpg',
                     date: '15 Jul, 2020',
                     title: 'Top five way for solving teeth problems.',
                     desc: 'Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.',
                     link: ''
                 },
                 {
-                    img: '/blog3.jpg',
+                    img: 'blog/blog3.jpg',
                     date: '05 Jan, 2020',
                     title: 'We provide highly business soliutions.',
                     desc: 'Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.',
@@ -347,13 +347,13 @@ export default function DataContextProvider({ children }) {
             blogPage: {
                 secTitle: 'Blog Single',
                 news: {
-                    newsImg: '/blog1.jpg',
+                    newsImg: 'blog/blog1.jpg',
                     newsTitle: {
                         title: 'More than 80 clinical trials launch to test of the coronavirus .',
                         titleLink: '/',
                     },
                     authorDetails: {
-                        authorImg: '/author1.jpg',
+                        authorImg: 'author/author1.jpg',
                         authorName: 'Aothor Name',
                         postDate: '03 Feb 2019',
                         commentsCount: '05 Comments',
@@ -373,8 +373,8 @@ export default function DataContextProvider({ children }) {
                         ],
                     },
                     newsGallery: [
-                        '/blog2.jpg',
-                        '/blog3.jpg',
+                        'blog/blog2.jpg',
+                        'blog/blog3.jpg',
                     ],
                     blockquoteText: [
                         'Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam. Nam ac risus vitae sem vehicula egestas. Sed velit nulla, viverra non commodo et, sodales',
@@ -383,7 +383,7 @@ export default function DataContextProvider({ children }) {
                         title: 'All Comments',
                         comment: [
                             {
-                                authorImg: '/author1.jpg',
+                                authorImg: 'author/author1.jpg',
                                 authorName: 'Aothor Name',
                                 postDate: '03 Feb 2019',
                                 postTime: '03:38 AM',
@@ -391,7 +391,7 @@ export default function DataContextProvider({ children }) {
                                 replayLink: '/'
                             },
                             {
-                                authorImg: '/author2.jpg',
+                                authorImg: 'author/author2.jpg',
                                 authorName: 'Aothor Name',
                                 postDate: '03 Feb 2019',
                                 postTime: '03:38 AM',
@@ -400,7 +400,7 @@ export default function DataContextProvider({ children }) {
                                 replay: true
                             },
                             {
-                                authorImg: '/author3.jpg',
+                                authorImg: 'author/author3.jpg',
                                 authorName: 'Aothor Name',
                                 postDate: '03 Feb 2019',
                                 postTime: '03:38 AM',
@@ -438,9 +438,9 @@ export default function DataContextProvider({ children }) {
                             recentPost: {
                                 title: 'Recent post',
                                 post: [
-                                    { img: '/blog-sidebar1.jpg', title: 'We have annnocuced our new product.', date: 'Jan 11, 2020', comments: 35 },
-                                    { img: '/blog-sidebar2.jpg', title: 'Top five way for solving teeth problems.', date: 'Jan 11, 2020', comments: 35 },
-                                    { img: '/blog-sidebar3.jpg', title: 'We provide highly business soliutions.', date: 'Jan 11, 2020', comments: 35 },
+                                    { img: 'blog/blog-sidebar1.jpg', title: 'We have annnocuced our new product.', date: 'Jan 11, 2020', comments: 35 },
+                                    { img: 'blog/blog-sidebar2.jpg', title: 'Top five way for solving teeth problems.', date: 'Jan 11, 2020', comments: 35 },
+                                    { img: 'blog/blog-sidebar3.jpg', title: 'We provide highly business soliutions.', date: 'Jan 11, 2020', comments: 35 },
                                 ]
                             },
                             tags: {
@@ -461,11 +461,11 @@ export default function DataContextProvider({ children }) {
             },
         },
         clients: [
-            'client1.png',
-            'client2.png',
-            'client3.png',
-            'client4.png',
-            'client5.png',
+            'client/client1.png',
+            'client/client2.png',
+            'client/client3.png',
+            'client/client4.png',
+            'client/client5.png',
         ],
         appointment: {
             secTitle: 'We Are Always Ready to Help You. Book An Appointment',
@@ -501,6 +501,11 @@ export default function DataContextProvider({ children }) {
                 ],
                 submitText: 'Subscribe',
             },
+        },
+        error:{
+            secTitle:'404',
+            tagline:"Oop's  sorry we can't find that page!",
+            secDesc:"Aenean eget sollicitudin lorem, et pretium felis. Nullam euismod diam libero, sed dapibus leo laoreet ut. Suspendisse potenti. Phasellus urna lacus"
         },
         footer: {
             aboutTitle: {

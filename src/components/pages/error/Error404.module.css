@@ -1,0 +1,83 @@
+/*========================
+	Start Error 404 CSS
+==========================*/ 
+.errorPage {
+	text-align: center;
+	background: #fff;
+	border-top: 1px solid #eee;
+}
+.errorPage .errorInner {
+	display: inline-block;
+}
+.errorPage .errorInner h1 {
+	font-size: 140px;
+	text-shadow: 3px 5px 2px #3333;
+	color: #1A76D1;
+	font-weight: 700;
+}
+.errorPage .errorInner h1 span {
+	display: block;
+	font-size: 25px;
+	color: #333;
+	font-weight: 600;
+	text-shadow: none;
+}
+.errorPage .errorInner p {
+	padding: 20px 15px;
+}
+.errorPage .searchForm {
+	width: 100%;
+	position: relative;
+}
+.errorPage .searchForm input {
+	width: 400px;
+	height: 50px;
+	padding: 0px 78px 0 30px;
+	border: none;
+	background: #f6f6f6;
+	border-radius: 5px;
+	display: inline-block;
+	margin-right: 10px;
+	font-weight:400;
+	font-size:14px;
+    transition: .3s;
+}
+.errorPage .searchForm input:hover{
+	padding-left:35px;
+}
+.errorPage .searchForm .btn {
+	width: 80px;
+	height: 50px;
+	border-radius: 5px;
+	cursor: pointer;
+	background: #1A76D1;
+	display: inline-block;
+	position: relative;
+	top: -2px;
+}
+.errorPage .searchForm .btn i{
+	font-size:16px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .errorPage .errorInner h1 {
+        font-size: 80px;
+    }
+    .errorPage .errorInner h1 span {
+        font-size: 17px;
+    }
+    .errorPage .searchForm .btn {
+        top: 0;
+        width: 100%;
+        display: block;
+        margin-top: 15px;
+    }
+    .errorPage .searchForm input {
+        width: 100%;
+        display: block;
+    }
+}
+/*========================
+	End Error 404 CSS
+==========================*/ 

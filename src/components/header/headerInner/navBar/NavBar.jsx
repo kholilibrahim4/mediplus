@@ -51,7 +51,7 @@ export default function NavBar({tiggerAct}) {
                         </li>
                         <li><a href="#">Pages <i className="icofont-rounded-down"></i></a>
                             <ul className={`${styles.dropdown}`}>
-                                <li><a href="404.html">404 Error</a></li>
+                                <li><Link to="/404">404 Error</Link></li>
                             </ul>
                         </li>
                         <li><Link to="/blog">Blogs <i className="icofont-rounded-down"></i></Link>
@@ -59,7 +59,7 @@ export default function NavBar({tiggerAct}) {
                                 <li><Link to="/blog">Blog Details</Link></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
                     </ul>
                 </nav>
             </div>

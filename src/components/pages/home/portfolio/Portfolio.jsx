@@ -28,6 +28,7 @@ export default function Portfolio() {
 
     useEffect(() => {
         windowSize()
+        window.scroll(0,0)
     }, [])
     window.addEventListener('resize', windowSize)
 
