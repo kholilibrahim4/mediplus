@@ -143,22 +143,22 @@ export default function DataContextProvider({ children }) {
             secDesc: 'Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts',
             portfolioItem: [
                 {
-                    img: '/pf1.jpg',
+                    img: 'portfolio/pf1.jpg',
                     btnText: 'View Details',
                     link: '/portfolio'
                 },
                 {
-                    img: '/pf2.jpg',
+                    img: 'portfolio/pf2.jpg',
                     btnText: 'View Details',
                     link: '/portfolio'
                 },
                 {
-                    img: '/pf3.jpg',
+                    img: 'portfolio/pf3.jpg',
                     btnText: 'View Details',
                     link: '/portfolio'
                 },
                 {
-                    img: '/pf4.jpg',
+                    img: 'portfolio/pf4.jpg',
                     btnText: 'View Details',
                     link: '/portfolio'
                 },
