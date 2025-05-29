@@ -23,8 +23,8 @@ export default function Home() {
 
   return (
     <>
-        <GetPro /> 
-        <Header /> 
+        {/* <GetPro /> 
+        <Header />  */}
         <Hero />
 
         <Schedule />
@@ -39,7 +39,7 @@ export default function Home() {
         <Clients />
         <Appointment />
         <Newsletter />
-        <Footer />
+        {/* <Footer /> */}
     </>
   )
 }

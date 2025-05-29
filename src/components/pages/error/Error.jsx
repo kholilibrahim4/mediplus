@@ -11,10 +11,10 @@ export default function Error() {
 
     return (
         <>
-            <GetPro />
-            <Header />
+            {/* <GetPro />
+            <Header /> */}
             <Error404 />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

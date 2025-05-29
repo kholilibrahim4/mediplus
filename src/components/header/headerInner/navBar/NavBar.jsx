@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Col } from 'react-bootstrap'
 import styles from './NavBar.module.css'
 import { Link } from 'react-router-dom'
+import { AllDataContext } from '../../../contextApi/DataContext'
 
 
-export default function NavBar({tiggerAct}) {
+export default function NavBar({ tiggerAct }) {
+    const { navBar } = useContext(AllDataContext)
     const [mobileMenuAct, setMobileMenuAct] = useState(false)
 
     function mobileMenuActive() {
@@ -22,34 +24,57 @@ export default function NavBar({tiggerAct}) {
         mobileMenuActive()
     })
 
+    const dropdownFunc = (dropdown) => {
+        return (
+            <>
+                <i className="fa fa-angle-down"></i>
+                <ul className={`${styles.dropdown}`}>
+                    {dropdown.map((subNav, subInd) => (
+                        <li key={subInd}><Link to={subNav.link}>{subNav.text}</Link>
+                            {subNav.dropdown && dropdownFunc(subNav.dropdown)}
+                        </li>
+                    ))}
+                </ul>
+            </>
+        )
+    }
 
 
-    
+
     return (
         <Col lg={7} md={9} sm={12}>
             {/* <!-- Main Menu --> */}
-            <div className={tiggerAct? `${styles.mainMenuActMobile}`: ''}>
+            <div className={tiggerAct ? `${styles.mainMenuActMobile}` : ''}>
                 <nav className="navigation">
                     <ul className={mobileMenuAct ? `${styles.navBar} ${styles.mobileMenu}` : `${styles.navBar}`}>
-                        <li className={`${styles.active}`}><Link to="/">Home </Link>
+
+                        {navBar.map((nav, ind) => {
+                            const {text,link,dropdown} = nav;
+                            return <li key={ind} className={text == 'Home'? `${styles.active}`:''}>
+                                <Link to={link}>{text}</Link>
+                                {dropdown && dropdownFunc(dropdown)} {/* if has dropdown */}
+                                
+                            </li>
                             
-                        </li>
-                        <li><a href="#">Doctos </a></li>
-                        <li><a href="#">Services  <i className="icofont-rounded-down"></i></a>
+                        })}
+
+                        {/* <li className={`${styles.active}`}><Link to="/">Home </Link></li>
+                        <li><Link to="/">Doctos </Link></li>
+                        <li><Link to="/">Services  <i className="icofont-rounded-down"></i></Link>
                         <ul className={`${styles.dropdown}`}>
-                                <li><a href="/">Service 1</a></li>
-                                <li><a href="/">Service 2</a></li>
-                                <li><a href="/">Service 3 <i className="icofont-rounded-down"></i></a>
+                                <li><Link to="/">Service 1</Link></li>
+                                <li><Link to="/">Service 2</Link></li>
+                                <li><Link to="/">Service 3 <i className="icofont-rounded-down"></i></Link>
                                     <ul className={`${styles.dropdown}`}>
-                                        <li><a href="/">Service 3.1</a></li>
-                                        <li><a href="/">Service 3.2</a></li>
-                                        <li><a href="/">Service 3.3</a>
+                                        <li><Link to="/">Service 3.1</Link></li>
+                                        <li><Link to="/">Service 3.2</Link></li>
+                                        <li><Link to="/">Service 3.3</Link>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#">Pages <i className="icofont-rounded-down"></i></a>
+                        <li><Link to="/">Pages <i className="icofont-rounded-down"></i></Link>
                             <ul className={`${styles.dropdown}`}>
                                 <li><Link to="/404">404 Error</Link></li>
                             </ul>
@@ -59,7 +84,7 @@ export default function NavBar({tiggerAct}) {
                                 <li><Link to="/blog">Blog Details</Link></li>
                             </ul>
                         </li>
-                        <li><Link to="/contact">Contact Us</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li> */}
                     </ul>
                 </nav>
             </div>

@@ -1,8 +1,10 @@
 .getQuote{
 	margin-top:12px;
+	text-align: right;
 }
 .getQuote .btn{
 	color:#fff;
+	padding: 13px 22px;
 }
 .style2 .getQuote {
 	margin-top: 0;

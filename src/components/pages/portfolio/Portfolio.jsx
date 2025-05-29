@@ -13,11 +13,11 @@ export default function Portfolio() {
     },[])
   return (
     <>
-        <GetPro />
-        <Header />
+        {/* <GetPro />
+        <Header /> */}
         <PageHero secTitle={secTitle}/>
         <PortfolioDetails />
-        <Footer />
+        {/* <Footer /> */}
     </>
   )
 }

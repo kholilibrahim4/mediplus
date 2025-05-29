@@ -6,6 +6,37 @@ export const AllDataContext = createContext()
 // 2 context provider
 export default function DataContextProvider({ children }) {
     const allData = {
+        navBar: [
+            { text: "Home", link: '/' },
+            { text: "Doctos", link: '/' },
+            {
+                text: "Dropdown", link: '/',
+                dropdown: [
+                    { text: 'Dropdown 1.1', link: '/' },
+                    { text: 'Dropdown 1.2', link: '/' },
+                    {
+                        text: 'Dropdown 1.3', link: '/',
+                        dropdown: [
+                            { text: 'Dropdown 2.1', link: '/' },
+                            { text: 'Dropdown 2.2', link: '/' },
+                        ]
+                    },
+                ]
+            },
+            {
+                text: "Pages", link: '#',
+                dropdown: [
+                    { text: '404', link: '/404' }
+                ]
+            },
+            {
+                text: "Blogs", link: '#',
+                dropdown: [
+                    { text: 'Blog', link: '/blog' }
+                ]
+            },
+            { text: "Contact Us", link: '/contact' },
+        ],
         hero: [
             {
                 title: `We Provide Medical Services That You Can Trust!`,
@@ -42,7 +73,7 @@ export default function DataContextProvider({ children }) {
                 title: 'Emergency Cases',
                 desc: 'Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.',
                 btnText: 'LEARN MORE',
-                btnIcon:'fa-arrow-right-long'
+                btnIcon: 'fa-arrow-right-long'
             },
             {
                 icon: 'icofont-prescription',
@@ -50,7 +81,7 @@ export default function DataContextProvider({ children }) {
                 title: 'Doctors Timetable',
                 desc: 'Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.',
                 btnText: 'LEARN MORE',
-                btnIcon:'fa-arrow-right-long'
+                btnIcon: 'fa-arrow-right-long'
             },
             {
                 icon: 'icofont-ui-clock',
@@ -62,7 +93,7 @@ export default function DataContextProvider({ children }) {
                     { days: 'Monday - Thusday ', time: '9.00-15.00' },
                 ],
                 btnText: 'LEARN MORE',
-                btnIcon:'fa-arrow-right-long'
+                btnIcon: 'fa-arrow-right-long'
             },
         ],
 
@@ -163,23 +194,23 @@ export default function DataContextProvider({ children }) {
                     link: '/portfolio'
                 },
             ],
-            portfolioPage:{
+            portfolioPage: {
                 secTitle: 'Portfolio Single',
-                portfolioSlider:[
+                portfolioSlider: [
                     '/call-bg.jpg',
                     '/call-bg.jpg',
                     '/call-bg.jpg'
                 ],
-                portfolioInfo:{
-                    date:[
-                        {category:'Category :',details:'Heart Surgery'},
-                        {category:'Date :',details:'April 20, 2019'},
-                        {category:'Client :',details:'Suke Agency'},
-                        {category:'Age :',details:'Typo'},
+                portfolioInfo: {
+                    date: [
+                        { category: 'Category :', details: 'Heart Surgery' },
+                        { category: 'Date :', details: 'April 20, 2019' },
+                        { category: 'Client :', details: 'Suke Agency' },
+                        { category: 'Age :', details: 'Typo' },
                     ],
-                    infos:{
-                        title:'Here is the name of this project here',
-                        desc:[
+                    infos: {
+                        title: 'Here is the name of this project here',
+                        desc: [
                             'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor a ti incididunt ut labore et dolore to in magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.Lorem ipsum dolor sit amet, in a in to in a consectetur.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna in a aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod',
                             'ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna to in aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua.',
                             'ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna a aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod. dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.'
@@ -502,10 +533,29 @@ export default function DataContextProvider({ children }) {
                 submitText: 'Subscribe',
             },
         },
-        error:{
-            secTitle:'404',
-            tagline:"Oop's  sorry we can't find that page!",
-            secDesc:"Aenean eget sollicitudin lorem, et pretium felis. Nullam euismod diam libero, sed dapibus leo laoreet ut. Suspendisse potenti. Phasellus urna lacus"
+        error: {
+            secTitle: '404',
+            tagline: "Oop's  sorry we can't find that page!",
+            secDesc: "Aenean eget sollicitudin lorem, et pretium felis. Nullam euismod diam libero, sed dapibus leo laoreet ut. Suspendisse potenti. Phasellus urna lacus"
+        },
+        contactPage: {
+            secTitle:'Contact Us',
+            secDesc:'If you have any questions please fell free to contact with us.',
+            inputForm: [
+                { type: "text", name: "name", placeholder: "Name" },
+                { type: "email", name: "email", placeholder: "Email" },
+                { type: "text", name: "subject", placeholder: "Subject" },
+                { type: "email", name: "email", placeholder: "Email" },
+            ],
+            textareaForm: [
+                { name: "message", placeholder: "Your Message" }
+            ],
+            contactInfo:[
+                {icon:'icofont icofont-ui-call',title:'+(000) 1234 56789',desc:'info@company.com'},
+                {icon:'icofont icofont-google-map',title:'2 Fir e Brigade Road',desc:'Chittagonj, Lakshmipur'},
+                {icon:'icofont icofont-wall-clock',title:'Mon - Sat: 8am - 5pm',desc:'Sunday Closed'},
+            ]
+
         },
         footer: {
             aboutTitle: {
@@ -524,10 +574,10 @@ export default function DataContextProvider({ children }) {
             newsletterTitle: {
                 secTitle: 'Newsletter',
                 secDesc: 'subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-                input:[
+                input: [
                     { name: 'email', tpye: 'email', placeholder: 'Email Address', btnIcon: 'icofont-paper-plane' },
                 ]
-                
+
             },
 
             footerSocial: [
@@ -561,6 +611,7 @@ export default function DataContextProvider({ children }) {
                     { days: 'Monday - Thusday ', time: '9.00-15.00' },
                 ]
             },
+
             copyRight: {
                 copyRightText: '© Copyright 2018  |  All Rights Reserved by ',
                 webLink: '/',

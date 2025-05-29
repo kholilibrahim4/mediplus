@@ -1,18 +1,26 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import ContactForm from './ContactForm'
 import Footer from '../../footer/Footer'
-import GetPro from '../../getPro/GetPro'
-import Header from '../../header/Header'
+import styles from './Contact.module.css'
+import ContactInfo from './ContactInfo'
+import PageHero from '../../pageHero/PageHero'
+import { AllDataContext } from '../../contextApi/DataContext'
 
 export default function Contact() {
+    const { contactPage: { secTitle } } = useContext(AllDataContext)
+    useEffect(()=>{
+        window.scroll(0,0)
+      },[])
     return (
         <>
-            <GetPro />
-            <Header />
-            <section className="contact-us section">
+            {/* <GetPro />
+            <Header /> */}
+            <PageHero secTitle={secTitle}/>
+            
+            <section className={`${styles.contactUs} section`}>
                 <Container>
-                    <div className="inner">
+                    <div className={`${styles.inner}`}>
                         <Row>
                             <Col lg={6}>
 
@@ -22,9 +30,10 @@ export default function Contact() {
                             </Col>
                         </Row>
                     </div>
+                    <ContactInfo />
                 </Container>
             </section>
-             <Footer />
+             {/* <Footer /> */}
         </>
     )
 }

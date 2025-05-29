@@ -7,7 +7,7 @@ import Blockquote from '../blockquote/Blockquote'
 
 export default function NewsText() {
     const { blogs: { blogPage: { news: { newsTexts: { text1, text2, text3 }, blockquoteText } } } } = useContext(AllDataContext)
-    const mapFunc = (text) => text.map((text) => <p>{text}</p>)
+    const mapFunc = (text) => text.map((text,ind) => <p key={ind}>{text}</p>)
 
     return (
         <div className={`${styles.newsText}`}>

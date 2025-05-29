@@ -178,6 +178,12 @@ section {
 }
 /* blog page comments replay css end ========= */
 
+/* contact page checkbox  */
+.checkbox label.checked::after{
+	opacity:1;
+	visibility:visible;
+	transform:scale(1);
+}
 
 @media screen and (max-width: 768px) {
     body {

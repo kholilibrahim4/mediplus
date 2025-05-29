@@ -9,7 +9,7 @@ export default function ServicesItem({icon,title,desc}) {
             {/* <!-- Start Single Service --> */}
             <div className={`${styles.singleService}`}>
                 <i className={`icofont ${icon}`}></i>
-                <h4><a href="service-details.html">{title}</a></h4>
+                <h4><a href="#">{title}</a></h4>
                 <p>{desc}</p>
             </div>
             {/* <!-- End Single Service --> */}

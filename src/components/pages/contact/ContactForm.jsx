@@ -1,47 +1,59 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import Form from '../../form/Form'
-import { Row } from 'react-bootstrap'
+import InputField from '../../form/InputField'
+import TextareaField from '../../form/TextareaField'
+import Button from '../../button/Button'
+import { Row, Col } from 'react-bootstrap'
+import styles from './Contact.module.css'
+import { AllDataContext } from '../../contextApi/DataContext'
+
 
 export default function ContactForm() {
+    const { contactPage: { secTitle,secDesc,inputForm, textareaForm } } = useContext(AllDataContext)
+    const [toogleChekcActive, setToogleChekcActive] = useState(false)
+    const toogleChekc = (e) => {
+        // console.log(e.stopPropagation());
+        setToogleChekcActive(!toogleChekcActive)
+        console.log(toogleChekcActive)
+    }
+
     return (
-        <div class="contact-us-form">
-            <h2>Contact With Us</h2>
-            <p>If you have any questions please fell free to contact with us.</p>
+        <div className={`${styles.contactUsForm}`}>
+            <h2>{secTitle}</h2>
+            <p>{secDesc}</p>
             {/* <!-- Form --> */}
-            <Form class="form" method="post" action="mail/mail.php">
+            <Form className={`${styles.form}`} method="post" action="mail/mail.php">
                 <Row>
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Name" required="" />
+                    {inputForm.map((item, ind) => {
+                        const { name, type, placeholder } = item;
+                        return (
+                            <Col key={ind} lg={6}>
+                                <div className={`${styles.formGroup} form-group`}>
+                                    <InputField type={type} name={name} placeholder={placeholder} required="" />
+                                </div>
+                            </Col>
+                        )
+                    })}
+
+                    {textareaForm.map((item, ind) => {
+                        return (
+                            <Col key={ind} lg={12}>
+                                <div className={`${styles.formGroup} form-group`}>
+                                    <TextareaField name="message" placeholder="Your Message" required=""></TextareaField>
+                                </div>
+                            </Col>
+                        )
+                    })}
+
+
+                    <div className="col-12">
+                        <div className={`${styles.formGroup} ${styles.loginBtn} form-group `}>
+                            <Button className={`${styles.btn} btn`} type="submit">Send</Button>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Email" required="" />
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <input type="text" name="phone" placeholder="Phone" required=""/>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <input type="text" name="subject" placeholder="Subject" required=""/>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Your Message" required=""></textarea>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group login-btn">
-                            <button class="btn" type="submit">Send</button>
-                        </div>
-                        <div class="checkbox">
-                            <label class="checkbox-inline" for="2">
-                                <input name="news" id="2" type="checkbox" />
+                        {/* <div className={`${styles.checkbox} checkbox`}> */}
+                        <div className={`${styles.checkbox} checkbox`}>
+                            <label className={`${toogleChekcActive ? "checked" : ""}`} onChange={() => toogleChekc()} htmlFor="2">
+                                <InputField type="checkbox" name="" id="2" />
                                 Do you want to subscribe our Newsletter ?
                             </label>
                         </div>

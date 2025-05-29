@@ -9,8 +9,8 @@ export default function Gallerys() {
     return (
         <div className={`${styles.imageGallery}`}>
             <Row>
-                {newsGallery.map((img)=>{
-                   return <GallerySingle img={img}/>
+                {newsGallery.map((img,ind)=>{
+                   return <GallerySingle key={ind} img={img}/>
                 })}
             </Row>
         </div>

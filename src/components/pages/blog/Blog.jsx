@@ -14,11 +14,11 @@ export default function Blog() {
   },[])
   return (
     <>
-      <GetPro />
-      <Header />
+      {/* <GetPro />
+      <Header /> */}
       <PageHero secTitle={secTitle}/>
       <News />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

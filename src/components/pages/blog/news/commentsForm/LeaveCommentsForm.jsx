@@ -18,9 +18,9 @@ export default function LeaveCommentsForm() {
 
             <Form method="post" action="mail/mail.php">
                 <Row>
-                    {input.map((item) => {
+                    {input.map((item, ind) => {
                         return (
-                            <Col lg={4} md={4} sm={12}>
+                            <Col key={ind} lg={4} md={4} sm={12}>
                                 <div className={`form-group ${styles.formGroup}`}>
                                     <i className={`fa ${item.icon}`}></i>
                                     <InputField type={item.type} name={item.name} placeholder={item.placeholder} required="required" />
@@ -28,9 +28,9 @@ export default function LeaveCommentsForm() {
                             </Col>
                         )
                     })}
-                    {msg.map((item) => {
+                    {msg.map((item,ind) => {
                         return (
-                            <Col lg={12}>
+                            <Col key={ind} lg={12}>
                                 <div className={`form-group ${styles.formGroup} ${styles.message}`}>
                                     <i className={`fa ${item.icon}`}></i>
                                     <TextareaField type={item.type} name={item.name} placeholder={item.placeholder} required="required" />
@@ -40,7 +40,7 @@ export default function LeaveCommentsForm() {
                     })}
 
                     <Col lg={12}>
-                        <div class="form-group button">
+                        <div className="form-group button">
                             <Button type="submit" className="btn primary" text={submitText}>
                                 <i className="fa-solid fa-paper-plane"></i>
                             </Button>

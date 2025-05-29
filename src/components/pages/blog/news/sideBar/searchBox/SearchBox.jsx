@@ -8,7 +8,7 @@ export default function SearchBox() {
         <div className={`${styles.singleWidget} ${styles.search}`}>
             <Form className={`${styles.form}`}>
                 <InputField type="email" placeholder="Search Here..."/>
-                <a className={`${styles.button}`} href="#">**<i class="fa fa-search"></i></a>
+                <a className={`${styles.button}`} href="#">**<i className="fa fa-search"></i></a>
             </Form>
             
         </div>

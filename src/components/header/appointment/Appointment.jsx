@@ -7,7 +7,7 @@ export default function Appointment() {
     return (
         <Col lg={2} sm={12}>
             <div className={`${styles.getQuote}`}>
-                <a href="appointment.html" className="btn">Book Appointment</a>
+                <a href="appointment.html" className={`${styles.btn} btn`}>Book Appointment</a>
             </div>
         </Col>
     )

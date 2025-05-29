@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import TopBar from './topBar/TopBar'
 import HeaderInner from './headerInner/HeaderInner'
 
-export default function Header() {
+export default function Header({children}) {
   const [tiggerAct, setTiggerAct] = useState(false)
 
 
@@ -10,6 +10,7 @@ export default function Header() {
     <>
       <TopBar />
       <HeaderInner  tiggerAct={tiggerAct} setTiggerAct={setTiggerAct}/>
+      {children }
     </>
   )
 }

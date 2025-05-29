@@ -88,7 +88,7 @@ ul{
 	transition: all 0.3s ease 0s;
 	opacity: 0;
 	visibility: hidden;
-	top: 74px;
+	top: 100%;
 	border-left:3px solid #2889e4;
 }
  .navBar li:hover > .dropdown{
@@ -96,6 +96,9 @@ ul{
 	visibility:visible;
 	transform:translateY(0px);
 }
+ .navBar li .dropdown * .dropdown  {
+	left: 10%;
+ }
  .navBar li .dropdown li{
 	float:none;
 	margin:0;
@@ -107,13 +110,19 @@ ul{
  .navBar li .dropdown li a {
 	padding: 12px 15px;
 	color: #666;
-	display: block;
+	display: inline-block;
 	font-weight: 400;
 	text-transform: capitalize;
 	background: transparent;
 	-webkit-transition:all 0.2s ease;
 	-moz-transition:all 0.2s ease;
 	transition:all 0.2s ease;
+}
+.navBar li .dropdown i{
+	position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    top: 50%;
 }
  .navBar li .dropdown li a:before{
 	display:none;

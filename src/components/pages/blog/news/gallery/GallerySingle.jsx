@@ -5,7 +5,7 @@ import styles from './Gallery.module.css'
 export default function GallerySingle({img}) {
     return (
         <Col lg={6} md={6} sm={12}>
-            <div class={`${styles.singleImage}`}>
+            <div className={`${styles.singleImage}`}>
                 <img src={img} alt="#" />
             </div>
         </Col>

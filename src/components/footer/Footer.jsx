@@ -10,9 +10,11 @@ import InputField from '../form/InputField'
 import Button from '../button/Button'
 
 
-export default function Footer() {
+export default function Footer({children}) {
     const { footer: { aboutTitle, quickTitle, openHourTitle, quickLinks: { link1, link2 }, footerSocial, openHourSchedule: { schedule }, newsletterTitle, copyRight: { copyRightText, webLink, webText } }, newsletter: { form: { input } } } = useContext(AllDataContext)
     return (
+        <>
+        {children}
         <footer id="footer" className={styles.footer}>
             {/* <!-- Footer Top --> */}
             <div className={styles.footerTop}>
@@ -101,5 +103,6 @@ export default function Footer() {
             </div>
             <Copyright copyRightText={copyRightText} webLink={webLink} webText={webText} />
         </footer>
+        </>
     )
 }
