@@ -554,7 +554,10 @@ export default function DataContextProvider({ children }) {
                 {icon:'icofont icofont-ui-call',title:'+(000) 1234 56789',desc:'info@company.com'},
                 {icon:'icofont icofont-google-map',title:'2 Fir e Brigade Road',desc:'Chittagonj, Lakshmipur'},
                 {icon:'icofont icofont-wall-clock',title:'Mon - Sat: 8am - 5pm',desc:'Sunday Closed'},
-            ]
+            ],
+            maps:{
+                longitude:90.356331, latitude:23.684994,
+            }
 
         },
         footer: {

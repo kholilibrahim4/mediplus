@@ -6,6 +6,7 @@ import styles from './Contact.module.css'
 import ContactInfo from './ContactInfo'
 import PageHero from '../../pageHero/PageHero'
 import { AllDataContext } from '../../contextApi/DataContext'
+import ContactMap from './ContactMap'
 
 export default function Contact() {
     const { contactPage: { secTitle } } = useContext(AllDataContext)
@@ -23,7 +24,7 @@ export default function Contact() {
                     <div className={`${styles.inner}`}>
                         <Row>
                             <Col lg={6}>
-
+                                <ContactMap />
                             </Col>
                             <Col lg={6}>
                                 <ContactForm />
